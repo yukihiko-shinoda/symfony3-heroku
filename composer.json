@@ -28,7 +28,8 @@
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "^2.0",
         "symfony/assetic-bundle": "^2.8",
-        "doctrine/doctrine-migrations-bundle": "^1.3"
+        "doctrine/doctrine-migrations-bundle": "^1.3",
+        "snc/redis-bundle": "^2.1"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
@@ -72,6 +73,10 @@
                 "database_name": "SYMFONY_DATABASE_NAME",
                 "database_user": "SYMFONY_DATABASE_USER",
                 "database_password": "SYMFONY_DATABASE_PASSWORD",
+                "redis_dsn_default": "SYMFONY_REDIS_DSN_DEFAULT",
+                "redis_dsn_cache": "SYMFONY_REDIS_DSN_CACHE",
+                "redis_dsn_session": "SYMFONY_REDIS_DSN_SESSION",
+                "redis_dsn_profiler_storage": "SYMFONY_REDIS_DSN_STORAGE",
                 "secret": "SYMFONY_SECRET"
             }
         }
