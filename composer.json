@@ -73,6 +73,7 @@
                 "database_name": "SYMFONY_DATABASE_NAME",
                 "database_user": "SYMFONY_DATABASE_USER",
                 "database_password": "SYMFONY_DATABASE_PASSWORD",
+                "mysql_ssl_ca": "SYMFONY_MYSQL_CA",
                 "redis_dsn_default": "SYMFONY_REDIS_DSN_DEFAULT",
                 "redis_dsn_cache": "SYMFONY_REDIS_DSN_CACHE",
                 "redis_dsn_session": "SYMFONY_REDIS_DSN_SESSION",
