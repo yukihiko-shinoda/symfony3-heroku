@@ -92,13 +92,14 @@ snc_redis:
             type: phpredis
             alias: session
             dsn: "%redis_dsn_session%"
+            logging: false
         profiler_storage:
             type: phpredis
             alias: profiler_storage
             dsn: "%redis_dsn_profiler_storage%"
-            logging: true
+            logging: false
     session:
-        client: default
+        client: session
         ttl: 31536000
     doctrine:
         metadata_cache:
