@@ -41,18 +41,19 @@ twig:
 # Doctrine Configuration
 doctrine:
     dbal:
-        driver:   pdo_mysql
-        host:     "%database_host%"
-        port:     "%database_port%"
-        dbname:   "%database_name%"
-        user:     "%database_user%"
-        password: "%database_password%"
         charset:  UTF8
-        # Options for SSL connection
-        options:
-            # ↓ can't work
-            # MYSQL_ATTR_SSL_CA: "%mysql_ssl_ca%"
-            1012: "%mysql_ssl_ca%"
+        driver:   pdo_pgsq
+#        host:     "%database_host%"
+#        port:     "%database_port%"
+#        dbname:   "%database_name%"
+#        user:     "%database_user%"
+#        password: "%database_password%"
+#        # Options for SSL connection
+#        options:
+#            # ↓ can't work
+#            # MYSQL_ATTR_SSL_CA: "%mysql_ssl_ca%"
+#            1012: "%mysql_ssl_ca%"
+        url: "%database_url%"
         # if using pdo_sqlite as your database driver:
         #   1. add the path in parameters.yml
         #     e.g. database_path: "%kernel.root_dir%/data/data.db3"
