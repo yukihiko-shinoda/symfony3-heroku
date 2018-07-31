@@ -13,6 +13,12 @@ imports:
 #        result_cache_driver: apc
 #        query_cache_driver: apc
 
+framework:
+    session:
+        # http://symfony.com/doc/current/reference/configuration/framework.html#handler-id
+        handler_id:  session.handler.native_file
+        save_path:   "%kernel.root_dir%/../var/sessions/%kernel.environment%"
+
 monolog:
     handlers:
         main:
@@ -25,3 +31,6 @@ monolog:
             level: debug
         console:
             type:  console
+
+swiftmailer:
+    spool:     { type: memory }
