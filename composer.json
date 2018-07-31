@@ -39,6 +39,9 @@
         "heroku/heroku-buildpack-php": "*"
     },
     "scripts": {
+        "compile": [
+            "cp -fip dot_htaccess_web web/.htaccess"
+        ],
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
